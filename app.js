@@ -26,7 +26,7 @@ initialzeDatabaseAndServer()
 
 // API 1 Usesing the method POST ;
 const validatePsssword = password => {
-  return password.length < 5
+  return password.length > 5
 }
 
 app.post('/register', async (request, response) => {
